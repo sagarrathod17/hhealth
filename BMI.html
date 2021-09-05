@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> BMI Calculator </title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+    	
+    	.main{
+    		width: 450px;
+    		margin-top: 10px;
+    		margin-left: 50px;
+    	}
+    	.hero{
+    		background-color: #f7f7f7;
+    	}
+    	.head{
+        position: fixed;
+        top: 0;
+        z-index: 300;
+    	}
+    	.content{
+    		margin-top: 100px;
+    	}
+    </style>
+
+</head>
+<body>
+
+	<nav class="head bg-primary text-white container-fluid" style="display: inline-flex;">
+		<a href="health calculator.html"><img class="p-2" src="https://calculator-online.net/assets/img/logo.webp"></a>
+        <div class="btn-group">
+          <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Calculator Type
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Health</a>
+            <a class="dropdown-item" href="#">Math</a>
+            <a class="dropdown-item" href="#">Finance</a>
+            <a class="dropdown-item" href="#">Informmative</a>
+            <a class="dropdown-item" href="#">Physics</a>
+            <a class="dropdown-item" href="#">Chemistry</a>
+            <a class="dropdown-item" href="#">Statistics</a>
+          </div>
+          </div>
+          <button type="button" class="btn btn-primary">Conversion Calculator</button>
+          <button type="button" class="btn btn-primary">Education</button>
+          <button type="button" class="btn btn-primary">Advertise</button>
+          <button type="button" class="btn btn-primary">Contact Us</button>
+        </div>
+    </nav>
+	<h2 class="text-info container content"> BMI Calculator : </h2>
+    
+    <div class="container">
+    	<div class="card">
+    		<div class="card-header text-center"> BMI Calculator : </div>
+    		<div class="card-body">
+    			<form class="w-50 m-auto">
+    				<div class="form-group">
+    					<label> Weight : </label>
+    					<input type="number" name="" id="Weight" class="form-control">
+    				</div>
+    				<div class="form-group">
+    					<label> Height : </label>
+    					<input type="number" name="" id="Height" class="form-control">
+    				</div>
+    				<div class="form-group">
+    					<label> BMI Value : </label>
+    					<input type="number" name="" id="weight" class="form-control">
+    				</div>
+    				<div>
+    					<button type="submit" class="btn btn-success" onclick="getBMIvalue()">Check BMI</button>
+    				</div>
+    			</form>
+    		</div>
+    		<div class="card-footer text-center"> A healthy BMI ranges between 19 and 25.</div>
+    		
+    	</div>
+    	
+    </div>
+	
+	<div class="card container mt-2">
+	<div class="p-2">
+    	
+		A smart bmi calculator helps to calculate body mass index value and corresponding weight status. This calculator allows you to compute bmi for men, women, teen, and Childs. Use this calculator to know in which category your body mass index falls, it can be normal, underweight, overweight, or obese. You can enter your weight either in pounds (lbs) or kilograms (kg), and height in feet and inches or centimeters into this calculator for calculations.
+
+		Give a read to this post to understand bmi formula, chart, scale, range, classification for men and women (adult), and child and teen, and much more.
+	</div><hr/>
+    
+	<div class="">
+		<h2 class="text-info"> BMI (Overview): </h2>
+		A body mass index is referred to as a measurement of leanness or corpulence that dervived from the mass (weight) and height of a person. Remember that this number does not measure body fat directly, however, it is moderately correlated with more direct measures of body fat. It is defined as body mass divided by the square of the body height, and is universally expressed in units of kg/m^2 , resulting from mass in kilograms and height in metres. BMI calculation is considered to determine whether a person is underweight, healthy weight, overweight or obese.
+
+		Remember that bmi ranges may vary depends on your exercise regime. The more you gain weight more will be the body mass index, but it doesn’t mean that you are obese it may be because of high muscle also.
+	</div><hr/>
+
+	<div class="">
+		<h2 class="text-info"> Calculate BMI’s For Different Ages: </h2>
+		<div class="p-1">1. BMI Calculator For Men: Want to know what normal bmi for men is. This calculator helps to calculate body mass index for men corresponding to weight status by taking the age & weight into consideration.</div>
+
+		<div class="p-1">2. BMI Calculator For Women: Helps to calculate bmi for women and tells whether you have a healthy body mass index for women, or an obese.</div>
+
+		<div class="p-1">3. BMI Calculator For Teenagers: To calculate bmi for teenagers that based on clinical growth charts, and tells whether teen’s body mass range falls into an underweight, healthy weight, overweight, or obese.</div>
+
+		<div class="p-1">4. BMI Calculator For Kids (Children): Allow to calculate bmi for kids according to the age percentile that depends on the CDC growth charts for children. This tool generates CDC BMI chart for kids.</div>
+	</div><hr/>
+
+	<div>
+		<h2 class="text-info"> What is BMI Formula? </h2>
+		<div class="text-dark">
+			<h3>1. English BMI Formula :</h3>
+			<h5 class="ml-4">BMI = weight(lb)/(Height(in))² * 703</h5>
+			When you considering English measurements or the above bmi equation, pounds should be divided by inches squared. And then, this should be multiplied by 703 to convert from lbs/inches² kg/m².
+		</div><br/>
+		<div class="text-dark p-2">
+			<h3>2. Metric BMI Formula :</h3>
+			<h5 class="ml-4">BMI = Weight(kg) / Height(m)²</h5>
+			The above equation is demonstrated weight in kg divided by height in meters squared. If your height has measured in centimeters (cm), then all you need to divide it by 100 to convert this to meters (m). 
+		</div>
+	</div><hr/>
+
+	<div class="">
+		<h2 class="text-info"> How is BMI Interpreted For Adults? </h2>
+		For adults 20 years old and older, Body Mass Index is interpreted by using standard weight status categories. Experts depicted that the bmi scale is something that will place you in one of six categories. These categories for BMI are the same for adult men and women of all body types and ages. Now, look at the given chart!
+		
+		<table class="main ">
+			<tr class="bg-info ">
+				<td class="text-white"> Classification</td>
+				<td class="text-white"> Body Mass Index Score </td>
+			</tr>
+			<tr>
+				<td> Underweight </td>
+				<td> less than 18.5 </td>
+			</tr>
+			<tr>
+				<td> Normal Weight </td>
+				<td> 18.5 – 24.9 </td>
+			</tr>
+			<tr>
+				<td> Overweight </td>
+				<td> 25 – 29.9 </td>
+			</tr>
+			<tr>
+				<td> Obesity (Class 1) </td>
+				<td> 30 – 34.9 </td>
+			</tr>
+			<tr>
+				<td> Obesity (Class 2) </td>
+				<td> 35 – 39.9 </td>
+			</tr>
+			<tr>
+				<td> Extreme Obesity (Class 3) </td>
+				<td> 40+ </td>
+			</tr>
+		</table>
+		<div class="text-dark">
+			<h4>BMI less than 18.5 (Underweight):</h4>
+			A lean Body Mass Index can refer to as your weight maybe too low. Remember that the lower your body mass range the greater the health risks become!
+		</div>
+		<div class="text-dark">
+			<h4>BMI is between 18.5 and 24.9 (Normal Weight or Healthy Range):</h4>
+			Remember that individuals who have a BMI between 18.5 to 24.9 possess the ideal amount of body weight.
+		</div>
+		<div class="text-dark">
+			<h4>BMI is between 25 and 29.9 (Overweight):</h4>
+			Remember that such an overweight range increased the risk for a variety of illnesses. Recent studies found an increased rate of diabetes, blood pressure, and heart disease was recorded at 27.8 for men and 27.3 for women. So, try the above body mass index calculator for women and men to find the your normal range! Also, once you know you are overweight, consult to your health care provider!
+		</div>
+		<div class="text-dark">
+			<h4>BMI is between 30-34.99 (Obese Class 1):</h4>
+			People within this range are prone to a physically unhealthy condition. Ideally, to reach bmi healthy range, you ought to consult your health care provider and consider reducing your weight by 5% to 10%. This weight reduction is good to reach your ideal bmi for adult men and women.
+		</div>
+		<div class="text-dark">
+			<h4>BMI is between 35-39.99 (Obese Class 2):</h4>
+			If you fall within this range, then experts depict that the risk of weight-related health problems and even death, is severe. So, immediately consult your MEDICAL PRO for optimal weight range.
+		</div>
+		<div class="text-dark">
+			<h4>BMI is over 40 (Obese Class 3 : Morbid Obesity):</h4>
+			Studies depicted that if an individual have BMI of 40+, it indicates that he/she have an extremely high risk of weight-related disease and even premature death. So, consult to Doctor to get recommendations according to your body mass index ranges!
+		</div>
+	</div>
+
+    <div class="container">
+    <div class="col m3 s12 related hide-on-small-only">
+	
+		<div class="col s12">
+		<div class="col s12 white padding_0 related_box margin_top_20">
+			<strong class="col s12 font_size20 color_blue">Related Calculator <font color="#4e342e"></font></strong>
+			<hr class="col widget_line related_line">
+			<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="water intake.html" title="BMI Calculator">Water intake Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Pregnancy Calculator">Pregnancy Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Weight loss Calculator">Weight loss Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="BMR.html" title="BMR Calculator">BMR Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Ideal Body Weight Calculator">Ideal Body Weight Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Body Fat Calculator">Body Fat Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Implantation Calculator">Implantation Calculator</a>
+</div>
+
+	<div class="col s12 padding_0 display_none search_unit site_u_s">
+		
+	</div>
+</div>
+		</div>
+	</div>
+		<div class="col s12">
+		<div class="col s12 white padding_0 related_box margin_top_20">
+			<strong class="col s12 font_size20 color_blue"> <font color="#4e342e"></font></strong>
+			<hr class="col widget_line related_line">
+							<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="https://calculator-online.net/6-minute-walk-test/" title="6 Minute Walk Test Calculator">6 Minute Walk Test Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="TDEE Calculator">TDEE Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Macro Calculator">Macro Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="EER Calculator - Estimated Energy Requirement">EER Calculator - Estimated Energy Requirement</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="RMR Calculator">RMR Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Lean Body Mass Calculator">Lean Body Mass Calculator</a>
+				</div>
+				</div>
+	</div>
+	
+	
+	</div>
+</div>
+
+<div class="container-fluid">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2021 Company, Inc</p>
+  </footer>
+</div>
+
+</div>
+</body>
+</html>

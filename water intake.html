@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Water Intake Calculator</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    	.head{
+        position: fixed;
+        top: 0;
+        z-index: 300;
+      }
+      .hero{
+      	margin-top: 100px;
+      }
+    </style>
+</head>
+<body>
+
+	<nav class="head bg-primary text-white container-fluid" style="display: inline-flex;">
+		<a href="health calculator.html"><img class="p-2" src="https://calculator-online.net/assets/img/logo.webp"></a>
+        <div class="btn-group">
+          <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Calculator Type
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Health</a>
+            <a class="dropdown-item" href="#">Math</a>
+            <a class="dropdown-item" href="#">Finance</a>
+            <a class="dropdown-item" href="#">Informmative</a>
+            <a class="dropdown-item" href="#">Physics</a>
+            <a class="dropdown-item" href="#">Chemistry</a>
+            <a class="dropdown-item" href="#">Statistics</a>
+          </div>
+          </div>
+          <button type="button" class="btn btn-primary">Conversion Calculator</button>
+          <button type="button" class="btn btn-primary">Education</button>
+          <button type="button" class="btn btn-primary">Advertise</button>
+          <button type="button" class="btn btn-primary">Contact Us</button>
+        </div>
+    </nav>
+
+	<div class="hero container">
+	<fieldset class="text-info"><legend><strong><h2>Daily Water Intake Calculator : </h2></strong></legend><form class="contact" id="wicalculator"><p id="Units"><label for="Frm_Units">Unit System:</label>
+<select name="Units" id="Frm_Units"><option value="imperial" selected="">Imperial</option><option value="metric">Metric</option></select></p><p id="Weight_kg" style="display:none"><label for="Frm_Weight_kg">Body Weight (kg):</label>
+<input type="number" name="Weight_kg" id="Frm_Weight_kg" value="77"></p><p id="Weight_pounds"><label for="Frm_Weight_pounds">Body Weight (lbs):</label>
+<input type="number" name="Weight_pounds" id="Frm_Weight_pounds" value="170"></p><p id="Ex_time"><label for="Frm_extime">Duration of Workout (min/day):</label>
+<input type="number" name="Ex_time" id="Frm_extime" value="30"></p><p><input type="button" id="Calc" value="Calculate" class="submit" onclick="calculateWI()"></p></form></fieldset>
+</div>
+
+
+	<div class=" card container">
+		<p>Curious about how much water should I drink a day? Let’s end this curiosity today because this Water Intake Calculator will tell you how much water should you drink a day to stay fit and healthy. Bookmark this Water Calculator to stay aware of the water intake you need daily.</p><hr/>
+
+		<h2 id="Why-Is-Hydration-So-Important" class="text-info"><strong>Why Is Hydration So Important?</strong></h2>
+		<p>In straight forward term, staying hydrated is a key factor to a healthy body and optimum fitness performance. Drinking adequate amount of water is essential for your health and well-being. In fact, our bodies are made up of up to 60% of water. Human body cells and organs need water to function properly. Without sufficient water intake, human body has to prioritize what organs or process gets to use the available water. Means, certain body functions begin to suffer over time.</p>
+
+		<p>H.H Mitchell, Journal of Biological Chemistry 158 depicts – the heart and brain are composed of 73% water, and the lungs are about 83% of water. The muscles and kidneys are contains 79%, skin is about 64% of water, and even the bones are 31% watery. Means, it is immensely important to learn about how much water to drink a day for a healthy body, don’t to worry our water hydration calculator recommended water intake of a day. Well, following are the symptoms that you may experience when your body not getting enough water.</p>
+
+		<ul>
+			<li>Dehydration</li>
+			<li>Premature aging</li>
+			<li>Joint Issues</li>
+			<li>Constipation</li>
+			<li>Hunger Pangs</li>
+			<li>Headaches</li>
+			<li>Skin Issues</li>
+			<li>Certain cancers</li>
+			<li>Damage to various organs</li>
+			<li>Chemical imbalances</li>
+		</ul>
+
+		<h2 id="HOW-MUCH-WATER-SHOULD-I-DRINK-A-DAY"><b>HOW MUCH WATER SHOULD I DRINK A DAY? A MILLION DOLLAR QUESTION</b></h2>
+		<p><b>Hydration Calculator is Important for Everyone Because Staying Hydrated is Vital to Stay Alive and this Daily Water Intake Calculator Tells How Much Water Should You Drink a Day</b></p>
+		<p>&nbsp;</p>
+
+		<p>Water is the maximum constituent of the human body. It is associated with good health care and hydration of the skin. The body requires water for the proper functioning of the vital organs. Drinking less amount of water can lead to threatening health issues such as dehydration, impairment of body functions, kidney impairment, etc.<br>
+		How much water should you drink a day is the main query in this regard! Well, drink enough water to keep the body hydrated. The requirement for drinking water varies from one person to another. While the recommended one is to take approximately 8 glasses of water daily. I hope your query about how much water I should drink a day is quenched now.</p>
+		<p>For instance, if you’re 60kg, you should have to consume drink about 2 litres of water per day. And, an individual with 90 kg should have to drink about 3 litres of water.</p><hr/>
+
+		<h2 id="About-Water-Intake-Calculator" class="text-info"><strong>About Water Intake Calculator:</strong></h2>
+		<p>The simple, but highly accurate water intake calculator helps to estimate the amount of water that your body needs to consume based on your weight, activity level, and weather condition. In simple terms, this calculator tells you how much cups of water you need to drink per day to avoid dehydration. Well, wondering to know how this calculator works:</p>
+		<h4><strong>Find how much water you should drink daily with this hydration Calculator:</strong></h4>
+		<p>So, stick to the given steps of this drink water calculator to know your daily water intake, follow the ideal hydration requirement that provided with our calculator to avoid dehydration.</p>
+		<p><strong>Inputs:</strong></p>
+		<ul>
+			<li>First, all you need to select your gender from the two given options “Male” or “Female”</li>
+			<li>Now, you just ought to enter your body weight into the designated field of this calculator, it can either be in lbs or kg</li>
+			<li>Now, just select choose your activity level from the given drop-down list of this tool</li>
+			<li>Finally, just choose weather condition from the given drop down menu, and hit the calculate button</li>
+		</ul>
+		<p><strong>Output:</strong></p>
+		<p>Once done, this water per day calculator will provide you with:</p>
+		<ul>
+			<li>Your Ideal Hydration Requirement in “LITERS PER DAYS, ml, oz, cups)</li>
+			<li>Shows you how many bottles Podium (21 oz), Eddy (.75L), Antidote (1.5L) corresponding to your ideal hydrating requirements</li>
+			<li>The calculator shows your ideal hydration requirement, general water recommendations for European Food Safety Authority (EFSA) and the U.S. Institute of Medicine (IOM)</li>
+		</ul><hr/>
+
+	<h2 id="What-Are-The-Benefits-of-Proper-Hydration" class="text-info"><strong>What Are The Benefits of Proper Hydration?</strong></h2>
+	    <p>Read on to know about the well-known benefits of proper hydration:</p>
+	    <h4><strong>Improve Bodily Functions:</strong></h4>
+	    <p>Drinking sufficient amount of water assists your body to get the right balance of nutrients.</p>
+	    <p>Remember that drinking sufficient water assists your body to get the right balance of nutrients. Staying hydrated is vital as it allows your body processes go smoothly. Water in human body transports nutrients, helps in digestion and absorption, is a key to good circulation, and also maintains your body temperature. To know how much water a day your body needs to improve body functions, simply enter few parameters in our body water intake calculator &amp; hit the calculate button.</p>
+	    <h4><strong>Weight Loss/Control:</strong></h4>
+	    <p>The best weight loss plans always include a sufficient water intake. You can take a look at different diet plan to see that they suggested a high intake of water: Atkins, Paleo, Weight Watchers, EatingWell, Southbeach, Medifast, Sonoma, Volumetrics, Spectrum, Nutrisystem, Jillian Michaels, and the Dukan diet. They all reveal that you should have to drink more water to shed extra pounds.</p>
+	    <p>Water assists your body efficiently to process the food you consume. It helping you to consume less and even give you a “full” feeling. Also, proper water intake can contribute to a feeling of having “more energy.” However, you can account our water calculator to lose weight and stay healthy. Also, ahead to a dietitian to know how much water should you drink a day for your weight loss plan.</p>
+	    <h4><strong>Energizes Muscles:</strong></h4>
+	    <p>Studies reported that when muscle cells don’t have enough fluids, they don’t work well. This is all because of muscle fatigue as you are decreasing the balance of fluids and electrolytes.</p>
+	    <p>However, it is essential to intake water during exercise to replenish the fluids you are losing. The American College of Sports Medicine recommended 17 ounces (in addition to your normal water intake) before and even during any strenuous sporting workout.</p>
+	    <p>With exercise, you have to develop an “early and often” attitude. You ought to consume water before it’s needed and even you will avoid the negative effects of dehydration that occurs due to sweating.</p>
+	    <h4><strong>Help Kidney Function:</strong></h4>
+	    <p>The New York Times wellness study is mentioned that a moderate increase in water consumption can clear – sodium, toxins and urea from the body. It also decreasing the likelihood of kidney related problems and even kidney stones. To know how much water should you drink in a day to keep your kidneys healthy, consult to your dietitian.</p>
+	    <h4><strong>Create a Youthful Appearance:</strong></h4>
+	    <p>The University of Wisconsin reported that drinking water is a best way to keep great looking and youthful skin. Also, they suggested that using water in an external moisturizer in addition to drinking the proper amounts.</p>
+	    <h4><strong>Regular Bowel Movements:</strong></h4>
+	    <p>For proper bowel movements an individual body needs two things such as fiber and water. Studies reveal that if your body is short on fiber, then your body will pull water from stool, give you constipation. Even if you are lack in fiber, then your body may relieve constipation if has sufficient water.</p>
+	    <h4><strong>Removal of Toxins:</strong></h4>
+	    <p>Clean and fresh water intake does a great job of flushing out toxins from the body through sweat, urine and bowel movements.</p>
+	    <h4><strong>Reduce Cancer Risks:</strong></h4>
+	    <p>No doubt, consuming water is not a “cure” for cancer, but it may be a small part of preventing it.</p>
+	    <h4><strong>Increase Energy:</strong></h4>
+	    <p>Several studies found that a body starts to show thirst at around 1 to 2 percent dehydration. Experts depict that even before you begin to feel thirst, the effects of mild dehydration can decrease your energy, thinking and mood. The more dehydrated your body gets, the lower the energy levels will takes place.</p>
+	    <h4><strong>Ramp Up Brain Power:</strong></h4>
+	    <p>Researchers found a study in a London that students who were consuming water during exams actually scored higher on average in tests. No doubt, it is hard to say if this is physiological or psychological. Yes, it has been proven to work, so if you want to get good metrics, then why not take a bottle of water with you to the test.</p>
+	    <h4><strong>Prevent Cramping:</strong></h4>
+	    <p>When it comes to sports, cramps are caused by the things including depletion of potassium, improper stretching, and lack of water. So, you have to increase your water intake to avoid one of the major causes of cramping.</p>
+	    <h4><strong>Strengthen the Immune System:</strong></h4>
+	    <p>Simply, water is a key to health. Dehydration is something that dehydration compromise the body’s immune system. There are a few benefits of immune system from proper hydration.</p>
+	    <p>Water:</p>
+	    <ul>
+			<li>Oxygenates the blood</li>
+			<li>Removes toxins from the blood</li>
+			<li>Increases Lymph production</li>
+			<li>Cleans eyes</li>
+			<li>Cleans mouth</li>
+			<li>Helps digest food</li>
+			<li>Helps fight insomnia</li>
+			<li>Lubricates joints</li>
+			<li>Increases Serotonin Production (fights depression)</li>
+		</ul>
+		<h4><strong>Fluorination in Water:</strong></h4>
+		<p>Fluoridation is the last but not the least reason to drink water. The American Dental Association depicts that fluoridated water decreases the chances of tooth decay by 20 to 40%.</p>
+		<hr/>
+
+		<h2 id="What-Does-Dehydration-Feel-Like" class="text-info"><strong>What Does Dehydration Feel Like?</strong></h2>
+		<p>We all know that thirst is a first sign of dehydration, but there are several other clues that you have lost your fluid balance. The early signs of dehydration are:</p>
+		<ul>
+			<li>Thirst and dry mouth</li>
+			<li>Darker urine</li>
+			<li>Reduced urine or sweat output</li>
+			<li>Fatigue</li>
+			<li>Flushing of the skin</li>
+			<li>Elevated body temperature</li>
+			<li>Increased breathing rate</li>
+			<li>Elevated pulse</li>
+			<li>Headache, joint pain and cramps</li>
+		</ul>
+		<h3 id="The-Dangers-of-Dehydration"><strong>The Dangers of Dehydration:</strong></h3>
+		<p>However, there are some very serious potential consequences of dehydration. Remember that it can become severe if you don’t stop to rehydrate. Dehydration can lead to:</p>
+		<ul>
+			<li>Diarrhea</li>
+			<li>Fever</li>
+			<li>Vomiting</li>
+			<li>Kidney failure</li>
+			<li>Heat exhaustion</li>
+			<li>Coma</li>
+			<li>Death</li>
+		</ul>
+		<p>So, use the above best water consumption calculator to learn how much water should you drink in a day.</p>
+		<hr/>
+
+		<h2 id="How-do-I-calculate-my-daily-water-intake" class="text-info"><strong>How do I calculate my daily water intake?</strong></h2>
+		<p>You can easily calculate your daily water intake based on your weight with the given formula:</p>
+		<p><strong>The formula for daily water intake:</strong></p>
+		<p><strong>For male:</strong></p>
+		<p>Weight (lbs) * 0.5</p>
+		<p><strong>For Female:</strong></p>
+		<p>Weight (lbs) * 0.45</p>
+		<hr/>
+
+		<h2 id="What-Are-The-Rules-of-Hydration-and-Exercise" class="text-info"><strong>What Are The Rules of Hydration and Exercise?</strong></h2>
+		<p>Experts recommended that you have to drink water before, during, and after exercise. For most exercise, plain water will work best. Only few individuals recommend consuming an electrolyte drink after doing any vigorous workout for an hour or more to replace electrolytes.</p>
+		<p>Other study found that drinking too much water during exercise can cause cramps and stomach pain. So, while exercise it is best to sip slowly. Well, keep reading to learn how much water you need during exercise.</p>
+		<h4><strong>Before a Workout:</strong></h4>
+		<p>You have to hydrate frequently throughout the day. There is a need to cap off your fluid tank with 1/2–1 cup of water 15–20 minutes before exercise.</p>
+		<h4><strong>During a Workout:</strong></h4>
+		<p>While you workout, you ought to intake 1/2 cup fluid for every 20 minutes of exercise.</p>
+		<h4><strong>After a Workout:</strong></h4>
+		<p>You have to drink 2 cups of water for every pound of body weight lost as water intake based on body weight.</p>
+		<h4><strong>Sports Drinks:</strong></h4>
+		<p>If you are a particularly heavy sweater or workout for more than 45 minutes, then you can add a sports drink or electrolyte supplement during and after exercise routine.</p>
+		<hr/>
+
+		<h2 id="Tap-Water-Vs-Bottled-Water" class="text-info"><strong>Tap Water Vs Bottled Water:</strong></h2>
+		<h4><strong>Tap Water:</strong></h4>
+		<p>Tap water is the type of water, which comes out of your water faucet. In most countries, such type of water is supplied and controlled by a local government authority.</p>
+		<h5><strong>Who is it best for?</strong></h5>
+		<p>Yes, everyone! Generally, it is safe for things like cooking, cleaning and laundry.</p>
+		<h5><strong>Biggest benefits:</strong></h5>
+		<ul>
+			<li>Cheap</li>
+			<li>Easy to access for most people</li>
+			<li>Usually a safe source of water</li>
+		</ul>
+		<h5><strong>Risks and issues:</strong></h5>
+		<p>Generally, tap water is safe to drink, but some recent studies reported cause for concern. For instance, the EWG (Environmental Working Group) reported a 5-year study looking at the quality of US tap water. The results of EWG study showed that the tap water supplied to all 50 states, which contained over 500 different contaminants.</p>
+		<p>However, some other instances found where a mineral like fluoride is added to the public water supply. For instance, around 10 percent of the UK population is supplied with fluoridated tap water to cut tooth decay.</p>
+		<h4><strong>Bottled water:</strong></h4>
+		<p>Bottled water is portable purified water that an individual can readily and conveniently buy whenever he/she thirsty.</p>
+		<h5><strong>Who is it best for?</strong></h5>
+		<p>Bottled water is best for everyone. It is said to be a good source of water for drinking.</p>
+		<h5><strong>Biggest benefits:</strong></h5>
+		<ul>
+			<li>Convenient way to access</li>
+			<li>Clean &amp; Safe</li>
+		</ul>
+		<h5><strong>Risks and issues:</strong></h5>
+		<p>There are some well-known water brands who admitted that their bottled water is not more than filtered tap water.<br>
+		The prominent issue is that the environmental cost. The making of bottled water is insanely wasteful as manufacturers take about 3 liters of water just to get 1 liter.</p>
+		<hr/>
+
+		<h2 id="FAQs" class="text-info"><strong>FAQ’s:</strong></h2>
+		<h4 id="How-much-water-should-I-drink-a-day-for-my-weight"><strong>How much water should I drink a day for my weight?</strong></h4>
+		<p>In general terms, you should <a href="https://www.healthline.com/health/how-much-water-should-I-drink#benefits" rel="nofollow">aim to intake water between</a> half an ounce and an ounce of water for each you weigh, per day. For instance, if you weigh 150 pounds, then you should have to drink 75-150 ounces of water a day. However, you can enter values into the above water a day calculator to calculate water intake for weight loss, the calculator recommended daily water intake for your weight.</p>
+		<h4 id="How-many-bottles-of-water-should-I-drink-a-day"><strong>How many bottles of water should I drink a day?</strong></h4>
+		<p>Medical experts depicted that drinking at least half of your current body weight in ounce of water each day is ideal. For instance, if you weigh 150 lbs, then you should have to intake at least 75 ounces of water per day (that approximately indicates 4 and a half 16.9 oz (Absopure water bottles). Also, our water intake calculator tells you how much water in bottles you should drink a day based on your weight (kg or lbs).</p>
+		<h4 id="Is-4-Litres-of-water-a-day-too-much"><strong>Is 4 Litres of water a day too much?</strong></h4>
+		<p>It’s impossible to drink too much water, experts said. Remember that consuming a lot of water (and if more than 4 to 6 liters) over a short time can obviously upset the body’s sodium balance, and even cause a potentially fatal condition that said to be as hyponatremia, or water intoxication.</p>
+		<h4 id="Is-4-bottles-of-water-a-day-enough"><strong>Is 4 bottles of water a day enough?</strong></h4>
+		<p>It’s just a rough estimation of 4 bottles per day per person. So, if you aim to haul you daily water allowance around in your backpack, you are looking at adding around an extra 4 pounds.</p>
+		<h4 id="Is-two-bottles-of-water-a-day-enough"><strong>Is two bottles of water a day enough?</strong></h4>
+		<p>According to Medical Experts, this is how much water you should drink a day. You have often heard the term that you’re supposed to drink at least 8-ounce glasses of water per day. No doubt, that’s almost enough to fill a 2 – liter bottle, which even looks like a daunting task for many A people.</p>
+		<h4 id="What-foods-have-the-highest-water-content"><strong>What foods have the highest water content?</strong></h4>
+		<p>For instance, fruits like apricots, oranges, pineapples, blueberries, peaches, raspberries, and plums are loaded with over 80% water. Melons including cantaloupe and watermelon also contain some of the highest water content, at more than 90%.</p>
+		<h4 id="How-can-I-rehydrate-my-body"><strong>How can I rehydrate my body?</strong></h4>
+		<ul>
+			<li>You have to keep a bottle of water with you throughout the day</li>
+			<li>If you don’t like to <a href="https://www.cdc.gov/nutrition/data-statistics/plain-water-the-healthier-choice.html" rel="nofollow">intake plain water</a>, you can add a slice of lemon or lime to your drink</li>
+			<li>You have to drink water before, during, and after your workout routine</li>
+			<li>When you are feeling hungry, intake water</li>
+			<li>Make a schedule of drinking water</li>	
+			<li>You have to calculate your water intake regularly with the ease of daily water intake calculator</li>
+		</ul>
+		<hr/>
+
+		<h2 id="Disclaimer"><strong>Disclaimer:</strong></h2>
+		<p>The water intake/hydrated calculator are intended for educational or informational purposes only. The recommended water intake by this calculator is not more than estimations. For further query, you ought to consult with PRO!</p>
+
+		<div class="col s12">
+		<div class="col s12 white padding_0 related_box margin_top_20">
+			<strong class="col s12 font_size20 color_blue">Related <font color="#4e342e">Calculator</font></strong>
+			<hr class="col widget_line related_line">
+			<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="BMI.html" title="BMI Calculator">BMI Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Water Viscosity Calculator">Water Viscosity Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Weight loss Calculator">Weight loss Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="TDEE Calculator">TDEE Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Macro Calculator">Macro Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="EER Calculator - Estimated Energy Requirement">EER Calculator - Estimated Energy Requirement</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Corrected Calcium Calculator">Corrected Calcium Calculator</a>
+</div>
+
+
+</div>
+		</div>
+	
+
+	<div class="col s12 white padding_0 related_box margin_top_20">
+			<strong class="col s12 font_size20 color_blue">More Health <font color="#4e342e">Calculator</font></strong>
+			<hr class="col widget_line related_line">
+							<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Ovulation Calculator">Ovulation Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Pregnancy Calculator">Pregnancy Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="6 Minute Walk Test Calculator">6 Minute Walk Test Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="RMR Calculator">RMR Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="BMR.html" title="BMR Calculator">BMR Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Ideal Body Weight Calculator">Ideal Body Weight Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Body Fat Calculator">Body Fat Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Lean Body Mass Calculator">Lean Body Mass Calculator</a>
+				</div>
+				</div>
+</div>
+  </div>
+
+  <div class="container-fluid">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2021 Company, Inc</p>
+  </footer>
+</div>
+
+</body>
+</html>

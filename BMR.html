@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> BMR Calculator </title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    	.head{
+        position: fixed;
+        top: 0;
+        z-index: 300;
+      }
+      .hero{
+      	margin-top: 100px;
+      }
+    </style>
+</head>
+<body>
+
+	<nav class="head bg-primary text-white container-fluid" style="display: inline-flex;">
+		<a href="health calculator.html"><img class="p-2" src="https://calculator-online.net/assets/img/logo.webp">
+</a>       
+
+ <div class="btn-group">
+          <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Calculator Type
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Health</a>
+            <a class="dropdown-item" href="#">Math</a>
+            <a class="dropdown-item" href="#">Finance</a>
+            <a class="dropdown-item" href="#">Informmative</a>
+            <a class="dropdown-item" href="#">Physics</a>
+            <a class="dropdown-item" href="#">Chemistry</a>
+            <a class="dropdown-item" href="#">Statistics</a>
+          </div>
+          </div>
+          <button type="button" class="btn btn-primary">Conversion Calculator</button>
+          <button type="button" class="btn btn-primary">Education</button>
+          <button type="button" class="btn btn-primary">Advertise</button>
+          <button type="button" class="btn btn-primary">Contact Us</button>
+        </div>
+    </nav>
+
+    <div class="hero container">
+	<table>
+<tbody><tr><th colspan="2"><b><h2>BMR Calculator (Basal Metabolic Rate) : </h2></b> <a href="/bmr-calculator/metric-bmr-calculator.php" title="Metric BMI Calculator">Metric BMR Calculator</a></th></tr>
+<tr><td style="width:10%;"><label for="height_feet" class="">Height</label></td><td style="width:90%;"><input type="number" name="height_feet" id="height_feet" size="3" min="0" value=""> ft <input type="number" name="height_inches" id="height_inches" size="3" min="0" value=""> in</td></tr>
+<tr><td><label for="weight_pounds" class="">Weight</label></td><td><input type="number" name="weight_pounds" id="weight_pounds" size="3" min="0" step="any" class="bigger" value=""> lbs</td></tr>
+<tr><td><label for="age" class="">Age</label></td><td><input type="number" name="age" id="age" size="3" min="0" value=""></td></tr>
+<tr><td><label for="gender" class="">Gender</label></td><td><select name="gender" id="gender"><option value="female">Female</option><option value="male">Male</option></select></td></tr>
+<tr><td colspan="2"><input type="hidden" name="source" value="bmr-calculator"><input type="submit" value="Calculate BMR"></td></tr>
+</tbody></table>
+ </div>
+
+	<div class=" card container mt-4">
+    <h2 id="BMR-Calculator"><b>BMR Calculator</b></h2>
+    <p>Basal Metabolic Rate Calculator or BMR Calculator is a tool to know the minimum amount of energy your body needs to stay alive. BMR meaining is Basal Metabolic Rate mostly depends upon the muscular mass a body has. Calculating BMR is important because if you don’t know what is that least amount of calories your body needs, you may end up as tired and lethargic. Your body will not be performing its basic functions. So it’s better to get an idea of BMR using this Basal Metabolic Rate Calculator.</p><hr/>
+
+    <h2 id="HOW-MUCH-ENERGY-DO-YOU-NEED-TO-STAY-ALIVE" class="text-info"><b>HOW MUCH ENERGY DO YOU NEED TO STAY ALIVE?</b></h2>
+    <p><strong>Are You on Weight Loss Mission and Eager to Know What’s That Least Amount of Calories You Need to Stay Alive then This BMR Calculator is the Tool You Need?</strong></p>
+    <p>BMR Calculator or Basal Metabolic Rate Calculator tells you the number of calories your body needs to keep functioning well. If you want to know what my BMR then you need to calculate BMR using this BMR Calculator. Basal Metabolism depends upon the muscle mass you have in your body. If you are more muscular than your BMR will be higher than the person who is just fat but doesn’t have good muscles. And your muscles need energy to keep performing, and if your body doesn’t get the least amount of energy, it will loosen your muscles, and you’ll start feeling tired and lethargic.</p><hr/>
+
+    <h2 id="What-is-BMR" class="text-info"><b>What is BMR?</b></h2>
+    <p>As we narrated above that BMR or Basal Metabolic Rate is the consumption of calories by the body at zero activity level. In other words, this is the amount of energy you need for your healthy survival. And if your body won’t get this minimum amount of calories, basal metabolism will decline, and you will start feeling tired with no energy to do anything. So it’s important for every person to calculate BMR and how to calculate BMR, you can calculate basal metabolic rate with the ease of our efficient&nbsp;Basal Metabolic Rate Calculator.</p><hr/>
+
+    <h2 id="How-to-Calculate-BMR-using-Basal-Metabolic-Calculator" class="text-info"><b>How to Calculate BMR using Basal Metabolic Calculator?</b></h2>
+    <p>This BMR calculator is designed for the layman so that everyone can use it easily. No technical skills or BMR formula is required here. All you need to do is to put in the basic figures like your age, gender, your weight, and your daily activity level and calculate BMR by clicking or tapping on the calculate button. While putting in the information, be assured that this information you are providing us while calculating BMR is never stored anywhere, nor will be used for any other purpose. This information is used only to calculate your BMR, and as you leave the page or site, the information is no more these.</p>
+
+    <div>Given three equations are utilized by our base metabolic rate calculator:</div>
+    <p><strong>For men:</strong></p>
+    <p>BMR = 10W + 6.25H – 5A + 5</p>
+    <p><strong>For women:</strong></p>
+    <p>BMR = 10W + 6.25H – 5A – 161</p>
+
+    <h3><strong>Revised Harris-Benedict Equation:</strong></h3>
+    <p><strong>For men:</strong></p>
+    <p>BMR = 13.397W + 4.799H – 5.677A + 88.362</p>
+    <p><strong>For women:</strong></p>
+    <p>BMR = 9.247W + 3.098H – 4.330A + 447.593</p>
+
+    <h3><strong>Katch-McArdle Formula:</strong></h3>
+    <p>BMR = 370 + 21.6(1 – F)W</p>
+    <p>Where:</p>
+    <ul>
+		<li>W is body weight in kg</li>
+		<li>H is body height in cm</li>
+		<li>A is age</li>
+		<li>F is body fat in percentage</li>
+	</ul><hr/>
+
+	<h2 id="How-to-Use-BMR-Calculator-to-Lose-Weight" class="text-info"><b>How to Use BMR Calculator to Lose Weight?</b></h2>
+	<p>This Basal Metabolic Rate Calculator can be a handy tool for people want to lose weight. We have often observed the people who started their weight loss mission without proper information, soon we found them in the hospital because they felt that staring is the only way to lose weight and in order to lose weight, they forgot that their body need a certain amount of calories daily to perform routine tasks like breathing, thinking, blood supply, digestion, etc. And when your body doesn’t get this energy, more are the chances that you will get faint.</p>
+
+	<p>So, if you want to lose weight, the first thing that you need to know is your BMR. Calculate BMR using this Basal Metabolic Calculator and keep it in mind while planning your diet for weight loss. If your body has fat, you can afford to keep daily intake of calories lower than your BMR because in such case your body fat will be used to fulfill the gap and hence you will start losing the fat.</p>
+
+	<p>But if your body doesn’t have fat but muscles only, you must take care of your BMR. You can’t take lesser calories than least required amount of energy else your body will not perform well.</p><hr/>
+
+	<h2 id="Factors-Which-Affect-BMR" class="text-info"><b>Factors Which Affect BMR</b></h2>
+	<p>List of factors which may have a direct or indirect but a considerable effect on your BMR is long. Here we will discuss a few of the factors that affect BMR.</p>
+	<p><strong>Age:</strong> It is the most important factor in most of body-related indices and ratios like BMR, RMR, BMI, etc. the first thing you need to know while calculating BMR is your age. Age is directly used in BMR formula, and BMR is inversely proportional to age, i.e. higher age, lower the BMR will be.</p>
+	<p><strong>Gender:</strong> It is another factor that decides your BMR while calculating BMR. Men are normally more muscular mass, so their BMR is normally higher than the women.</p>
+	<p><strong>Daily Activity:</strong> It is the factor that affects BMR figures. If you are active and exercise daily, your BMR will be high. While, on the other hand, if you don’t have active routine and exercise is something you don’t even care about then your BMR will be much lower than an active person.</p>
+	<p><strong>Body size:</strong> keep in mind the metabolic rate increases as height, weight and even the surface area increase.</p>
+	<p><strong>Body composition:</strong> According to experts, if the lean muscle mass increases, then the metabolic rate also increases. Also, the fat tissue has a lower metabolic activity than the muscle tissue.</p>
+	<p><strong>Climate and body temperature:</strong> The people who live in tropical climates areas generally have 5-20 percent higher BMR than individuals who live in more temperature areas as it takes energy to keep the body cool. Remember that exercise/physical activity that performed in hot weather also imposes an additional metabolic load.</p>
+	<p><strong>Hormonal Levels:</strong> Thyroxine (T4) is the key hormone that has a significant effect upon BMR and it is released by the thyroid glands. Hypothyroidism is a condition that is relatively common, especially in female near or after menopause. Additionally, an individual with a weight problem and if his/her thyroid function turns out to be low, then he/she should have to consult with a health care providers for treatment.</p>
+	<p><strong>Health:</strong> Optimistic studies reveal that illness, fever, or injury can increase resting metabolic rate (RMR) two-fold.</p>
+	<p><strong>Health:</strong> Optimistic studies reveal that illness, fever, or injury can increase resting metabolic rate (RMR) two-fold.</p>
+	<p>Well, what so ever, you don’t need to get involved in complex calculations using basal metabolic rate formula rather keep it simple using this BMR Calculator or Basal Metabolic Calculator.</p><hr/>
+
+	<h2 id="FAQ" class="text-info">FAQ’s:</h2>
+	<h4><strong>How Is BMR calculated?</strong></h4>
+	<p>It is very simple and easy, you can readily do the math yourself with the ease of the given equation:</p>
+	<p>If you are a man, then;</p>
+	<p>BMR = (6.23 x weight in pounds) + (12.7 x height in inches) – (6.8 x age in years)</p>
+	<p>Very next, there is a need to calculate your daily caloric requirement by multiplying your BMR by your level of activity:</p>
+	<ul>
+		<li>If you are rarely exercising, then you have to multiply your BMR by 1.2</li>
+		<li>If you have exercise on 1-3 days per week, then you have to multiply your BMR by 1.375</li>
+		<li>If you have exercise on 3-5 days per week, then you have to multiply your BMR by 1.55</li>
+		<li>If you have exercise 6-7 days per week, then you have to multiply your BMR by 1.725</li>
+		<li>If you have exercised every day and have a physical job or even exercise twice per day, then you have to multiply your BMR by 1.9</li>
+	</ul>
+
+	<h4><strong>How much BMR is normal?</strong></h4>
+	<p>Normally, men have a BMR of about 1,600-1,800 kCals a day and when it comes to women; they have a BMR of 1,550 kCals a day. But remember that this is variable.</p>
+	<p>It is best to use the above calculator to track your BMR!</p>
+	
+	<h4><strong>How do you calculate your BMR to lose weight?</strong></h4>
+	<p>All you need is your height, weight, and age to perform such calculations! If you want to get weight in KG, then you ought to divide your weight in pounds by 2.2. And, if you want to calculate your height in centimeters, then there is a need to multiply the inches by 2.54.</p>
+	<p><strong>For men:</strong></p>
+	<p>BMR = (9.99 x weight in kilograms) + (6.25 x height in centimeters) – 4.92 x age in years + 5.</p>
+	<p><strong>For women:</strong></p>
+	<p>BMR = (9.99 x weight in kilograms) + (6.25 x height in centimeters) – (4.92 x age in years) – 161.</p>
+	<p>Well, these predictive equations just provide a baseline for estimating calories, and remember that the metabolic rates vary due to genetics and muscle mass.</p>
+
+	 <div class="col m3 s12 related hide-on-small-only">
+	
+		<div class="col s12">
+		<div class="col s12 white padding_0 related_box margin_top_20">
+			<strong class="col s12 font_size20 color_blue">Related Calculator <font color="#4e342e"></font></strong>
+			<hr class="col widget_line related_line">
+			<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="BMI.html" title="BMI Calculator">BMI Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Pregnancy Calculator">Pregnancy Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Weight loss Calculator">Weight loss Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="BMR Calculator">RMR Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Ideal Body Weight Calculator">Ideal Body Weight Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Body Fat Calculator">Body Fat Calculator</a>
+</div>
+<div class="col s12 hover_li">
+	<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Implantation Calculator">Implantation Calculator</a>
+</div>
+
+</div>
+		</div>
+	</div>
+		<div class="col s12">
+		<div class="col s12 white padding_0 related_box margin_top_20">
+			<strong class="col s12 font_size20 color_blue"> <font color="#4e342e"></font></strong>
+			<hr class="col widget_line related_line">
+							<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="6 Minute Walk Test Calculator">6 Minute Walk Test Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="TDEE Calculator">TDEE Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Macro Calculator">Macro Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="EER Calculator - Estimated Energy Requirement">EER Calculator - Estimated Energy Requirement</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="RMR Calculator">RMR Calculator</a>
+				</div>
+						<div class="col s12 hover_li">
+					<img src="https://calculator-online.net/assets/img/send.webp" alt="go" width="18" height="18" class="mbl_cat_img">&nbsp;&nbsp;<a href="" title="Lean Body Mass Calculator">Lean Body Mass Calculator</a>
+				</div>
+				</div>
+	</div>
+
+</div>
+
+<div class="container-fluid">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2021 Company, Inc</p>
+  </footer>
+</div>
+</body>
+</html>
